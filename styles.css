@@ -1,0 +1,24 @@
+body {
+    font-family: "Rubik", sans-serif; 
+    font-style: normal;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  
+
+  .mainCard {
+    background-image: linear-gradient(rgb(233, 226, 226), rgb(154, 152, 192));
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: darkgray solid 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Add space between stacked elements */
+  }
