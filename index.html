@@ -4,15 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <link rel="shortcut icon" href=mod7/IPAddressTracker/assets/design/images/favicon-32x32.png type="image/x-icon">
+  <link rel="shortcut icon" href="assets/design/images/favicon-32x32.png" type="image/x-icon">
+<img src="assets/icon-arrow.svg">
+<script type="module" src="./src/script.js" defer></script>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+
   
   
   <link rel="stylesheet" href="styles.css">
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
   
 
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
 
@@ -22,58 +27,69 @@ crossorigin=""/>
 
 <title>Frontend Mentor | IP Address Tracker</title>
 
-<script src="mod7/src/script.js"></script>
+
+
+
+
 
 </head>
 <body>
   <div class="mainCard">
 
     <div class = "form-container">
-       <h1>IP Address Tracker</h1>
+       <IP class="title">IP Address Tracker</h1>
 
         <form class="form-input">
           <input id = "ip-address" type="text"  placeholder="Search for any IP address or domain" />
-          <button id="searchBtn">
-            <img src="assests/icon-arrow.svg" width="12px" height="12px" alt="" srcset="">
+          <button id="searchBtn" class="btn" type ="submit">
+            <img src="assets/icon-arrow.svg" width="12px" height="12px" alt="arrow button to submit">
           </button>
         </form>
-      </div>
+      
 
-    <section id="info" class="info-grid">
+    <div class="info-grid">
       <div class="info-box">
+        <div class="between">
             <p class="label">IP ADDRESS</p>
-           <p class="value" id="ip">-</p>
+            <span id="currentIP" class = "results" >192.212.174.101</span>
         </div>
 
+      <div class="between">
+        <p class="label">LOCATION</p>
+           <p class="value">Location</p>
+           <span id="currentLocation" class = "results" >Pittsburgh, PA</span>
 
-      <div class="info-box">
-            <p class="label">LOCATION</p>
-           <p class="value" id="location">-</p>
+     </div
+      <div class="between">
+        <p class="label">TIMEZONE</p>
+          
+           <span id="currentTimeZone" class = "results" >EST -4.00</span>
+
+      </div>
+
+      <div class="between">
+        <p class="label">ISP</p>
+           
+           <span id="currentISP" class = "results" >Sun</span>
+
       </div>
 
 
-      <div class="info-box">
-            <p class="label">TIMEZONE</p>
-          <p class="value" id="timezone">-</p>
-      </div>
 
-      <div class="info-box">
-            <p class="label">ISP</p>
-           <p class="value" id="isp">-</p>
-      </div>
-    </section>
+        
+
+
+     
+    </div>
 
      <div id="map" class="map-container"></div>
 
-     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer
-integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-crossorigin=""></script>
+    </div>
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Evan Miller</a>.
     </div>
-  </div>
+  
 </body>
-</html>
 </html>
