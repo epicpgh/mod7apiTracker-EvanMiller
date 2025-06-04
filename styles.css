@@ -5,11 +5,11 @@
   }
   
   body {
+    box-sizing: inherit;
     font-family: 'Rubik', sans-serif;
-    background-color: hsl(249, 79%, 76%);
-    color: hsl(0, 0%, 17%);
-    padding: auto;
-  }
+    font-size: 18px;
+    color: #969696;
+}
   
   .mainCard {
     background-image: linear-gradient(rgb(233, 226, 226), rgb(116, 109, 244));
@@ -21,10 +21,24 @@
 
   h1 {
     font-size: 25px;
-    font-weight: 500;
+    font-weight: 700;
     padding-top: 20px;
     margin-bottom: 1.5rem;
     color: white;}
+
+    .form-container {
+        background: url('/app/assests/pattern-bg.png') no-repeat 100% 100% / cover;
+        text-align: center;
+        padding: 20px;
+        min-height: 200px;
+    }
+
+    .form-input{
+        position: relative;
+        text-align: center;
+        padding: 18px;
+        margin: auto;
+    }
 
     .search-bar {
         display: flex;
@@ -34,6 +48,15 @@
         background-color: #ffffff;
         border-radius: 15px;
         box-shadow: 0px 50px 50px -25px #00000019;
+      }
+
+      #ipInput{
+        justify-content: center;
+        width: 555px;
+        height: 58px;
+        background-color: #ffffff;
+        border-radius: 15px;
+
       }
 
       #searchBtn{
