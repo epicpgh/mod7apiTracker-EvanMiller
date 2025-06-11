@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f2f2f2;
+    color: hsl(0, 0%, 17%);
+  }
+  
+  main.mainCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-container {
+    background: linear-gradient(to right, #2b2dff, #6c63ff);
+    width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  form.search-input {
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .ip-input {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 12px 0 0 12px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+  }
+  
+  .btn {
+    background: black;
+    border: none;
+    padding: 0 1rem;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  .info-grid {
+    background: white;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 50px;
+    z-index: 10;
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+  .info-display {
+    text-align: left;
+    flex: 1 1 200px;
+  }
+  
+  .info-display h4 {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 59%);
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .info-display span {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  /* Map Styling */
+  .map-container {
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .info-grid {
+      flex-direction: column;
+      text-align: center;
+      gap: 1.5rem;
+    }
+  
+    .form-container {
+      padding: 1.5rem 1rem;
+    }
+  
+    .title {
+      font-size: 1.25rem;
+    }
+  }
